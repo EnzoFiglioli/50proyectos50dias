@@ -1,0 +1,64 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #f3efea;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #principal{
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        min-height: 300vh;
+    }
+
+    span{
+        display: block;
+        transition:1s all;
+        animation-delay: 2s;
+        background-color: #cae3aa;
+        color:white;
+        font-weight: 900;
+        padding: 70px;
+        transition: all 1s;
+        border-radius: 20px;
+        animation-duration: 4s;
+    }
+
+    .entrando {
+    animation: entrar 1s forwards;
+}
+
+@keyframes entrar {
+    0% { transform: translateX(-100vw); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes par {
+    0% { transform: translateX(-100vw); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes impar {
+    0% { transform: translateX(100vw); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+
+.par{
+    animation: par 1s forwards;;
+}
+
+.impar{
+    animation: impar 1s forwards;;
+}

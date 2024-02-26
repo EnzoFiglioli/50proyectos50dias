@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#xbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("xbox.jpg") #0000008d;
+    background-blend-mode: overlay;
+    z-index: 1;
+    background-size: cover;
+    width: 100%;
+}
+
+#ps5{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url("ps.jpg");
+    background-color: #0000ff83;
+    background-blend-mode: overlay;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+}
+
+#ps5-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    gap:6px;
+    white-space: nowrap;
+}
+
+#xbox-container{
+    white-space: nowrap;
+    position: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap:6px;
+    z-index: 3;
+}
+
+a{
+    color: #fff;
+    padding: 1em 3em;
+    font-size:1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px #fff solid;
+    text-decoration: none;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color:#fff;
+}
